@@ -6,18 +6,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const menubar = document.getElementById('navopen');
     const togglebtn = document.querySelector('.toggle-btn')
+    const offbtn = document.querySelector('.off-btn')
 
 
     togglebtn.addEventListener('click', () => {
-        menubar.classList.toggle('open');
-
-
-
-
-
-
+        menubar.classList.add('open');
 
     });
+
+    offbtn.addEventListener('click', () => {
+        menubar.classList.remove('open');
+
+    });
+
 });
 
 
