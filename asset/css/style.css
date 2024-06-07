@@ -369,14 +369,15 @@ body .open {
 
 .started-section .card-footer {
 
-    height: 0;
+    height: 0px;
     overflow: hidden;
-    transition: all 0.2s linear;
+    /* transition: all 0.2s linear; */
 
 }
 
 .started-section .card:hover .card-footer {
     overflow: visible;
+
 
 }
 
