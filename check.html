@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Replacement</title>
+    <style>
+        #image1,
+        #image2 {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="id1">ID 1 Content</div>
+    <div id="id2">ID 2 Content</div>
+
+    <img id="image1" src="path_to_first_image.jpg" alt="First Image">
+    <img id="image2" src="path_to_second_image.jpg" alt="Second Image">
+
+    <script>
+        function checkVisibility() {
+            var id1 = document.getElementById('id1');
+            var id2 = document.getElementById('id2');
+            var image1 = document.getElementById('image1');
+            var image2 = document.getElementById('image2');
+
+            if (isElementInViewport(id1)) {
+                image1.style.display = 'block';
+                image2.style.display = 'none';
+            } else if (isElementInViewport(id2)) {
+                image1.style.display = 'none';
+                image2.style.display = 'block';
+            } else {
+                image1.style.display = 'none';
+                image2.style.display = 'none';
+            }
+        }
+
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        window.addEventListener('scroll', checkVisibility);
+        window.addEventListener('resize', checkVisibility);
+        window.addEventListener('load', checkVisibility);
+    </script>
+</body>
+
+</html>
