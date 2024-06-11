@@ -23,7 +23,7 @@
 
     <div class="nav-section max-w-[1080px] mx-auto px-2 absolute top-0 right-0 left-0 z-10  ">
 
-        <nav class="">
+        <nav>
             <div class=" flex flex-col lg:flex-row items-center mx-auto p-4 ">
                 <div class=" w-[100%] lg:w-fit flex flex-row justify-between">
 
@@ -31,7 +31,7 @@
                         <svg viewBox="0 0 60 25" xmlns="http://www.w3.org/2000/svg" width="60" height="25"
                             class="UserLogo variant-- ">
                             <title>Stripe logo</title>
-                            <path fill="var(--userLogoColor, #0A2540)"
+                            <path fill="white"
                                 d="M59.64 14.28h-8.06c.19 1.93 1.6 2.55 3.2 2.55 1.64 0 2.96-.37 4.05-.95v3.32a8.33 8.33 0 0 1-4.56 1.1c-4.01 0-6.83-2.5-6.83-7.48 0-4.19 2.39-7.52 6.3-7.52 3.92 0 5.96 3.28 5.96 7.5 0 .4-.04 1.26-.06 1.48zm-5.92-5.62c-1.03 0-2.17.73-2.17 2.58h4.25c0-1.85-1.07-2.58-2.08-2.58zM40.95 20.3c-1.44 0-2.32-.6-2.9-1.04l-.02 4.63-4.12.87V5.57h3.76l.08 1.02a4.7 4.7 0 0 1 3.23-1.29c2.9 0 5.62 2.6 5.62 7.4 0 5.23-2.7 7.6-5.65 7.6zM40 8.95c-.95 0-1.54.34-1.97.81l.02 6.12c.4.44.98.78 1.95.78 1.52 0 2.54-1.65 2.54-3.87 0-2.15-1.04-3.84-2.54-3.84zM28.24 5.57h4.13v14.44h-4.13V5.57zm0-4.7L32.37 0v3.36l-4.13.88V.88zm-4.32 9.35v9.79H19.8V5.57h3.7l.12 1.22c1-1.77 3.07-1.41 3.62-1.22v3.79c-.52-.17-2.29-.43-3.32.86zm-8.55 4.72c0 2.43 2.6 1.68 3.12 1.46v3.36c-.55.3-1.54.54-2.89.54a4.15 4.15 0 0 1-4.27-4.24l.01-13.17 4.02-.86v3.54h3.14V9.1h-3.13v5.85zm-4.91.7c0 2.97-2.31 4.66-5.73 4.66a11.2 11.2 0 0 1-4.46-.93v-3.93c1.38.75 3.1 1.31 4.46 1.31.92 0 1.53-.24 1.53-1C6.26 13.77 0 14.51 0 9.95 0 7.04 2.28 5.3 5.62 5.3c1.36 0 2.72.2 4.09.75v3.88a9.23 9.23 0 0 0-4.1-1.06c-.86 0-1.44.25-1.44.9 0 1.85 6.29.97 6.29 5.88z"
                                 fill-rule="evenodd"></path>
                         </svg>
@@ -42,7 +42,7 @@
 
 
                 <div
-                    class="navbar-toggle lg:flex  hidden items-center justify-between w-full basis-[100%] lg:basis-auto">
+                    class="text-white navbar-toggle lg:flex  hidden items-center justify-between w-full basis-[100%] lg:basis-auto">
                     <ul class=" flex justify-between  lg:flex-row ">
                         <li>
                             <a href="" class="block p-3  lg:p-4 ">About</a>
@@ -71,7 +71,11 @@
                             <i class="fa-solid fa-arrow-right b2"></i>
                             <i class="fa-solid fa-chevron-right b1"></i>
                         </div>
-                        <a href="" class="btn-2 py-1 px-5">Sign in</a>
+                        <div class=" white py-1 px-2">
+                            <a href="">Sign in</a>
+
+                            <i class="fa-solid fa-chevron-right p-1"></i>
+                        </div>
 
                     </div>
                 </div>
@@ -142,14 +146,18 @@
 
                 <div class="w-[100%] md:w-[50%] ">
 
-                    <h1 class="mb-[20px]">Financial infrastructure to grow your revenue</h1>
+                    <h1 class="mb-[20px] opacity-65">Financial infrastructure to grow your revenue</h1>
                     <p class="mb-[20px]">
                         Join the millions of companies of all sizes that use Stripe to accept payments online and in
                         person,
                         embed financial services, power custom revenue models, and build a more profitable business.
                     </p>
-                    <div class="flex gap-y-5 flex-col lg:flex-row items-center  gap-x-2">
-                        <a href="" class="btn-2 ">Start Now</a>
+                    <div class="flex gap-y-5 flex-col lg:flex-row items-center  gap-x-2 ">
+                        <div class="btn-2 flex gap-x-2 w-fit  py-1 px-4">
+                            <a href="">Start Now</a>
+
+                            <i class="fa-solid fa-chevron-right "></i>
+                        </div>
                         <div class=" w-fit a1">
                             <a href="">Contact Sales</a>
                             <i class="fa-solid fa-arrow-right b2"></i>
@@ -304,218 +312,387 @@
 
 
     <!--Start Solution-section -->
-    <div class="solution-section container-1 ">
-        <div class="flex flex-col md:flex-row ">
+    <section class="solution-section">
+        <div class=" container-1 ">
+            <div class="flex flex-col md:flex-row ">
 
 
-            <!-- first column -->
-            <div class="w-[100%] md:w-[50%] flex flex-col gap-y-[64px] lg:gap-y-[200px]">
+                <!-- first column -->
+                <div class="w-[100%] md:w-[50%] flex flex-col gap-y-[64px] lg:gap-y-[200px] px-5">
 
 
-                <div class="flex flex-col justify-between gap-5" id="div1">
-                    <div class="img-wrapper  md:hidden">
+                    <div class="flex flex-col justify-between gap-5" id="div1">
+                        <div class="img-wrapper  md:hidden">
+                            <div data-aos="zoom-in-down">
+                                <img src="/asset/image/1.png" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <h6 class="mb-[22px] text-blue-700">Modular solutions</h6>
+                            <h2>A fully integrated suite of financial and payments products</h2>
+                        </div>
+                        <div>
+                            <p>
+                                Reduce costs, grow revenue, and run your business more efficiently on a fully integrated
+                                platform. Use Stripe to handle all of your payments-related needs, manage revenue
+                                operations, and launch (or invent) new business models.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="flex flex-col justify-between gap-8" id="div2">
+
+                        <div class="img-wrapper  md:hidden">
+                            <div data-aos="zoom-in-down">
+                                <img src="/asset/image/2.png" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex flex-row gap-x-2 items-center mb-[22px]">
+                                <svg class="ProductIcon ProductIcon--Payments HomepageFrontdoor__copyCaptionIcon"
+                                    width="20" height="20" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+
+                                    <title>Payments</title>
+
+                                    <path
+                                        d="M34.61 11.28a2.56 2.56 0 0 0-1.22-1.04L8.54.2A2.57 2.57 0 0 0 5 2.6V15c0 1.05.64 2 1.61 2.4l6.44 2.6 21.56 8.72c.26-.4.4-.88.39-1.36V12.64c0-.48-.13-.96-.39-1.37z"
+                                        fill="url(#product-icon-payments-PaymentsSection-a)"></path>
+                                    <path
+                                        d="M34.63 11.28L13.06 20l-6.45 2.6A2.58 2.58 0 0 0 5 25v12.42a2.58 2.58 0 0 0 3.54 2.39L33.4 29.76c.5-.21.93-.57 1.21-1.04.26-.41.4-.88.39-1.36V12.64c0-.48-.12-.95-.37-1.36z"
+                                        fill="#96F"></path>
+                                    <path
+                                        d="M34.62 11.28l.1.17c.18.37.28.77.28 1.19v-.03 14.75c0 .48-.13.95-.39 1.36L13.06 20l21.56-8.72z"
+                                        fill="url(#product-icon-payments-PaymentsSection-b)"></path>
+                                    <defs>
+                                        <linearGradient id="product-icon-payments-PaymentsSection-a" x1="20" y1="4.13"
+                                            x2="20" y2="21.13" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#11EFE3"></stop>
+                                            <stop offset="1" stop-color="#21CFE0"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="product-icon-payments-PaymentsSection-b" x1="35" y1="11.28"
+                                            x2="35" y2="28.72" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#0048E5"></stop>
+                                            <stop offset="1" stop-color="#9B66FF"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <p>Payment</p>
+                            </div>
+                            <h3>Accept and optimize payments, globally</h3>
+                        </div>
+                        <div>
+                            <p>
+
+                                Increase authorization rates, optimize your checkout conversion, and offer local payment
+                                methods in every market.
+
+                            </p>
+                        </div>
+
+                        <a href="" class="flex items-center  py-1 px-5 btn mb-[20px]">Start with Payment<i
+                                class="fa-solid fa-chevron-right p-1"></i></a>
+
+
+                        <div class="flex flex-col gap-y-2">
+                            <h6>See also</h6>
+                            <span> <a href="" class="text-blue-800 font-semibold">Tax</a> for automating sales tax and
+                                VAT
+                            </span>
+                            <span> <a href="" class="text-blue-800 font-semibold">Radar</a> for fraud prevention and
+                                management
+                            </span>
+                            <span> <a href="" class="text-blue-800 font-semibold">Terminal</a> for custom in-person
+                                payments
+                            </span>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="flex flex-col justify-between gap-8" id="div3">
+
+                        <div class="img-wrapper  md:hidden">
+                            <div data-aos="zoom-in-down">
+                                <img src="/asset/image/2.png" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex flex-row gap-x-2 items-center mb-[22px]">
+                                <svg class="ProductIcon ProductIcon--Billing HomepageFrontdoor__copyCaptionIcon"
+                                    width="20" height="20" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+
+                                    <title>Billing</title>
+
+                                    <path
+                                        d="M26 2.46C26 1.1 24.9 0 23.53 0H2.47A2.47 2.47 0 0 0 0 2.46v30.08a2.46 2.46 0 0 0 3.47 2.25l10.2-4.53 10.86-4.83c.9-.4 1.47-1.27 1.47-2.25V2.46z"
+                                        fill="url(#product-icon-billing-BillingSection-a)"></path>
+                                    <path d="M26.5 39a13.5 13.5 0 1 0 0-27 13.5 13.5 0 0 0 0 27z" fill="#00D924"></path>
+                                    <path d="M26 12v11.18c0 .98-.57 1.86-1.47 2.25l-10.7 4.76A13.5 13.5 0 0 1 26 12z"
+                                        fill="url(#product-icon-billing-BillingSection-b)"></path>
+                                    <defs>
+                                        <linearGradient id="product-icon-billing-BillingSection-a" x1="13" y1="6.35"
+                                            x2="13" y2="35.03" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FFD748"></stop>
+                                            <stop offset="1" stop-color="#FFC148"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="product-icon-billing-BillingSection-b" x1="19.5" y1="12.01"
+                                            x2="19.5" y2="30.19" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#00A600"></stop>
+                                            <stop offset="1" stop-color="#00D924"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <p>Payment</p>
+                            </div>
+                            <h3>Capture recurring revenue</h3>
+                        </div>
+                        <div>
+                            <p>
+
+
+                                Support recurring business models, minimize churn, and automate finance operations.
+
+
+                            </p>
+                        </div>
+
+                        <a href="" class="flex items-center  py-1 px-5 btn mb-[20px]">Start with billing<i
+                                class="fa-solid fa-chevron-right p-1"></i></a>
+
+
+                        <div class="flex flex-col gap-y-2">
+                            <h6>See also</h6>
+                            <span> <a href="" class="text-blue-800 font-semibold">Invoicing</a> for automating sales tax
+                                and
+                                VAT
+                            </span>
+                            <span> <a href="" class="text-blue-800 font-semibold">Renevue Recognition</a> for fraud
+                                prevention and
+                                management
+                            </span>
+                            <span> <a href="" class="text-blue-800 font-semibold">Sigma</a> for custom in-person
+                                payments
+                            </span>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="flex flex-col justify-between gap-8" id="div4">
+
+                        <div class="img-wrapper  md:hidden">
+                            <div data-aos="zoom-in-down">
+                                <img src="/asset/image/2.png" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex flex-row gap-x-2 items-center mb-[22px]">
+                                <svg class="ProductIcon ProductIcon--Connect HomepageFrontdoor__copyCaptionIcon"
+                                    width="20" height="20" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+
+                                    <title>Connect</title>
+
+                                    <path
+                                        d="M12.47.01a13.01 13.01 0 0 0 .5 25.99h10.55c1.37 0 2.48-1.1 2.48-2.48V13.01a12.99 12.99 0 0 0-13.53-13z"
+                                        fill="url(#product-icon-connect-ConnectSection-a)"></path>
+                                    <path
+                                        d="M27.53 39.99a13.01 13.01 0 0 0-.5-25.99H16.48A2.48 2.48 0 0 0 14 16.48v10.51a12.99 12.99 0 0 0 13.53 13z"
+                                        fill="#0073E6"></path>
+                                    <path
+                                        d="M26 14v9.52A2.48 2.48 0 0 1 23.52 26H14v-9.52A2.48 2.48 0 0 1 16.32 14l.16-.01H26z"
+                                        fill="url(#product-icon-connect-ConnectSection-b)"></path>
+                                    <defs>
+                                        <linearGradient id="product-icon-connect-ConnectSection-a" x1="13" y1="1.71"
+                                            x2="13" y2="15.25" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#11EFE3"></stop>
+                                            <stop offset=".33" stop-color="#15E8E2"></stop>
+                                            <stop offset=".74" stop-color="#1FD3E0"></stop>
+                                            <stop offset="1" stop-color="#21CFE0"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="product-icon-connect-ConnectSection-b" x1="20" y1="15.72"
+                                            x2="20" y2="27.24" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#00299C"></stop>
+                                            <stop offset="1" stop-color="#0073E6"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <p>Connect</p>
+                            </div>
+                            <h3>Set up multiparty payments and payouts</h3>
+                        </div>
+                        <div>
+                            <p>
+
+
+                                Integrate payments into your platform or marketplace for end-to-end payments
+                                experiences.
+
+
+                            </p>
+                        </div>
+
+                        <a href="" class="flex items-center  py-1 px-5 btn mb-[20px]">Start with Payment<i
+                                class="fa-solid fa-chevron-right p-1"></i></a>
+
+
+                        <div class="flex flex-col gap-y-2">
+                            <h6>See also</h6>
+                            <span> <a href="" class="text-blue-800 font-semibold">Terminal</a> for automating sales tax
+                                and
+                                VAT
+                            </span>
+                            <span> <a href="" class="text-blue-800 font-semibold">Instant Payouts</a> for fraud
+                                prevention
+                                and
+                                management
+                            </span>
+                            <span> <a href="" class="text-blue-800 font-semibold">Payments Elements</a> for custom
+                                in-person
+                                payments
+                            </span>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="flex flex-col justify-between gap-8" id="div5">
+
+                        <div class="img-wrapper  md:hidden">
+                            <div data-aos="zoom-in-down">
+                                <img src="/asset/image/2.png" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex flex-row gap-x-2 items-center mb-[22px]">
+                                <svg class="ProductIcon ProductIcon--Issuing HomepageFrontdoor__copyCaptionIcon"
+                                    width="20" height="20" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+
+                                    <title>Issuing</title>
+
+                                    <path
+                                        d="M7.62 26.48l-.02-.03a2.44 2.44 0 0 1-.7-1.48 2.49 2.49 0 0 1 .11-1.05c.05-.28.13-.54.24-.77l.08-.17L14.67 10h21.85A2.52 2.52 0 0 1 39 12.37l.01.16v22.92A2.52 2.52 0 0 1 36.67 38l-.16.01H19a2.5 2.5 0 0 0 .64-1.97c-.07-.66-.43-1.09-.95-1.47l-.15-.1-10.62-7.73-.14-.1v-.01l.14.1a2.52 2.52 0 0 1-.27-.21l-.03-.03z"
+                                        fill="url(#product-icon-issuing-IssuingSection-a)"></path>
+                                    <path
+                                        d="M22.05 2.1c.7-.15 1.41 0 1.99.41l6.56 4.72a2.5 2.5 0 0 1 .92 2.8V10l-8.5 26-.05.2-.03.08-.03.09-.15.32-.02.04-.19.29-.03.04a2.9 2.9 0 0 1-.23.25l-.03.02a2.24 2.24 0 0 1-.58.4l-.03.03c-.1.05-.2.1-.31.13h-.05l-.33.08h-.05a2.3 2.3 0 0 1-.36.03H3.53A2.53 2.53 0 0 1 1 35.45v-22.9C1 11.14 2.13 10 3.53 10H16.6l3.8-6.7a2.5 2.5 0 0 1 1.46-1.15l.18-.05z"
+                                        fill="#0073E6"></path>
+                                    <path
+                                        d="M31.38 10l-8.37 26-.02.1-.02.1-.03.08-.03.09-.07.16-.08.16-.02.04-.1.15-.09.14-.03.04-.11.13-.12.12-.03.02c-.08.09-.17.16-.26.23l-.15.1-.17.08-.03.02-.15.07-.16.06h-.05l-.16.05-.1.01.1-.1c.4-.51.59-1.17.51-1.82-.07-.66-.43-1.09-.95-1.47l-.15-.1-10.62-7.73-.14-.1a2.54 2.54 0 0 1-.26-.26l-.04-.05a2.48 2.48 0 0 1-.12-.14l-.02-.04-.03-.04a2.43 2.43 0 0 1-.17-.3l-.03-.06a2.5 2.5 0 0 1-.15-.42l-.01-.07-.02-.1-.01-.06a2.51 2.51 0 0 1 .05-1.01l.02-.09a2.5 2.5 0 0 1 .04-.1c.03-.25.1-.5.21-.74l.1-.17L16.66 10h14.71z"
+                                        fill="url(#product-icon-issuing-IssuingSection-b)"></path>
+                                    <defs>
+                                        <linearGradient id="product-icon-issuing-IssuingSection-a" x1="22.92" y1="11.68"
+                                            x2="22.92" y2="39.68" gradientUnits="userSpaceOnUse">
+                                            <stop offset=".1" stop-color="#FF80FF"></stop>
+                                            <stop offset=".39" stop-color="#FF7BF9"></stop>
+                                            <stop offset=".77" stop-color="#FF6EEA"></stop>
+                                            <stop offset="1" stop-color="#FF62DC"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="product-icon-issuing-IssuingSection-b" x1="31.38" y1="27.93"
+                                            x2="11.62" y2="27.93" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#0073E6"></stop>
+                                            <stop offset="1" stop-color="#00299C"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <p>Issuing</p>
+                            </div>
+                            <h3>Build a fintech offering with banking-as-a-service</h3>
+                        </div>
+                        <div>
+                            <p>
+
+
+                                Launch, manage, and scale a commercial card program without any setup fees.
+
+
+                            </p>
+                        </div>
+
+                        <a href="" class="flex items-center  py-1 px-5 btn mb-[20px]">Start with Payment<i
+                                class="fa-solid fa-chevron-right p-1"></i></a>
+
+
+                        <div class="flex flex-col gap-y-2">
+                            <h6>See also</h6>
+                            <span> <a href="" class="text-blue-800 font-semibold">Treasury</a> for automating sales tax
+                                and
+                                VAT
+                            </span>
+                            <span> <a href="" class="text-blue-800 font-semibold">Capital</a> for fraud prevention and
+                                management
+                            </span>
+                            <span> <a href="" class="text-blue-800 font-semibold">Connect</a> for custom in-person
+                                payments
+                            </span>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+                <!-- first column -->
+
+                <!-- second column -->
+                <div class="hidden md:block md:w-[50%]  flex flex-col gap-y-[100px] px-5 relative">
+
+
+                    <div id="img1" class="img-wrapper sticky top-[100px] hide">
                         <div data-aos="zoom-in-down">
                             <img src="/asset/image/1.png" alt="">
                         </div>
                     </div>
-                    <div>
-                        <p class="mb-[22px]">Modular solutions</p>
-                        <h3>A fully integrated suite of financial and payments products</h3>
-                    </div>
-                    <div>
-                        <p>
-                            Reduce costs, grow revenue, and run your business more efficiently on a fully integrated
-                            platform. Use Stripe to handle all of your payments-related needs, manage revenue
-                            operations, and launch (or invent) new business models.
-                        </p>
-                    </div>
-                </div>
 
 
 
-                <div class="flex flex-col justify-between gap-8" id="div2">
-
-                    <div class="img-wrapper  md:hidden">
+                    <div id="img2" class="img-wrapper  sticky top-[100px] hide">
                         <div data-aos="zoom-in-down">
                             <img src="/asset/image/2.png" alt="">
                         </div>
                     </div>
-                    <div>
-                        <p class="mb-[22px]">Payment</p>
-                        <h3>Accept and optimize payments, globally</h3>
-                    </div>
-                    <div>
-                        <p>
-
-                            Increase authorization rates, optimize your checkout conversion, and offer local payment
-                            methods in every market.
-
-                        </p>
-                    </div>
-                    <a href="" class="py-1 px-5 btn mb-[20px]">Start with Payment</a>
-                    <div class="flex flex-col gap-y-2">
-                        <h6>See also</h6>
-                        <span> for automating sales tax and VAT
-                        </span>
-                        <span> for fraud prevention and management
-                        </span>
-                        <span> for custom in-person payments
-                        </span>
-
-                    </div>
-                </div>
 
 
-
-
-                <div class="flex flex-col justify-between gap-8" id="div3">
-                    <div class="img-wrapper  md:hidden">
+                    <div id="img3" class="img-wrapper sticky top-[100px] hide">
                         <div data-aos="zoom-in-down">
                             <img src="/asset/image/3.png" alt="">
                         </div>
                     </div>
-                    <div>
-                        <p class="mb-[22px]">Payment</p>
-                        <h3>Accept and optimize payments, globally</h3>
-                    </div>
-                    <div>
-                        <p>
-
-                            Increase authorization rates, optimize your checkout conversion, and offer local payment
-                            methods in every market.
-
-                        </p>
-                    </div>
-                    <a href="" class="py-1 px-5 btn mb-[20px]">Start with Payment</a>
-                    <div class="flex flex-col gap-y-2">
-                        <h6>See also</h6>
-                        <span> for automating sales tax and VAT
-                        </span>
-                        <span> for fraud prevention and management
-                        </span>
-                        <span> for custom in-person payments
-                        </span>
-
-                    </div>
-                </div>
 
 
 
-
-
-                <div class="flex flex-col justify-between gap-8" id="div4">
-                    <div class="img-wrapper  md:hidden">
+                    <div id="img4" class="img-wrapper sticky top-[100px] hide">
                         <div data-aos="zoom-in-down">
                             <img src="/asset/image/4.png" alt="">
                         </div>
                     </div>
-                    <div>
-                        <p class="mb-[22px]">Payment</p>
-                        <h3>Accept and optimize payments, globally</h3>
-                    </div>
-                    <div>
-                        <p>
-
-                            Increase authorization rates, optimize your checkout conversion, and offer local payment
-                            methods in every market.
-
-                        </p>
-                    </div>
-                    <a href="" class="py-1 px-5 btn mb-[20px]">Start with Payment</a>
-                    <div class="flex flex-col gap-y-2">
-                        <h6>See also</h6>
-                        <span> for automating sales tax and VAT
-                        </span>
-                        <span> for fraud prevention and management
-                        </span>
-                        <span> for custom in-person payments
-                        </span>
-
-                    </div>
-                </div>
 
 
-
-
-
-
-                <div class="flex flex-col justify-between gap-8" id="div5">
-
-                    <div class="img-wrapper  md:hidden">
+                    <div id="img5" class="img-wrapper sticky top-[100px] hide">
                         <div data-aos="zoom-in-down">
                             <img src="/asset/image/5.png" alt="">
                         </div>
                     </div>
-                    <div>
-                        <p class="mb-[22px]">Payment</p>
-                        <h3>Accept and optimize payments, globally</h3>
-                    </div>
-                    <div>
-                        <p>
-
-                            Increase authorization rates, optimize your checkout conversion, and offer local payment
-                            methods in every market.
-
-                        </p>
-                    </div>
-                    <a href="" class="py-1 px-5 btn mb-[20px]">Start with Payment</a>
-                    <div class="flex flex-col gap-y-2">
-                        <h6>See also</h6>
-                        <span> for automating sales tax and VAT
-                        </span>
-                        <span> for fraud prevention and management
-                        </span>
-                        <span> for custom in-person payments
-                        </span>
-
-                    </div>
-                </div>
 
 
 
 
 
-            </div>
-            <!-- first column -->
 
-            <!-- second column -->
-            <div class="hidden md:block md:w-[50%]  flex flex-col gap-y-[100px] relative">
-
-
-                <div id="img1" class="img-wrapper sticky top-[100px] hide">
-                    <div data-aos="zoom-in-down">
-                        <img src="/asset/image/1.png" alt="">
-                    </div>
-                </div>
-
-
-
-                <div id="img2" class="img-wrapper  sticky top-[100px] hide">
-                    <div data-aos="zoom-in-down">
-                        <img src="/asset/image/2.png" alt="">
-                    </div>
-                </div>
-
-
-                <div id="img3" class="img-wrapper sticky top-[100px] hide">
-                    <div data-aos="zoom-in-down">
-                        <img src="/asset/image/3.png" alt="">
-                    </div>
-                </div>
-
-
-
-                <div id="img4" class="img-wrapper sticky top-[100px] hide">
-                    <div data-aos="zoom-in-down">
-                        <img src="/asset/image/4.png" alt="">
-                    </div>
-                </div>
-
-
-                <div id="img5" class="img-wrapper sticky top-[100px] hide">
-                    <div data-aos="zoom-in-down">
-                        <img src="/asset/image/5.png" alt="">
-                    </div>
                 </div>
 
 
@@ -524,14 +701,8 @@
 
 
             </div>
-
-
-
-
-
-
         </div>
-    </div>
+    </section>
 
     <!--End Solution-section -->
 
@@ -560,11 +731,11 @@
 
                 <div class="flex flex-wrap  justify-between">
                     <div class="w-[100%] sm:w-[50%] lg:w-[25%] p-4">
-                        <div class="mb-[20px] border-s-2 border-blue-800 px-2">
+                        <div class="mb-[20px] border-s-2 blue-primary px-2">
                             <h5>250M+</h5>
                         </div>
 
-                        <p class="fs-15">
+                        <p class="fs-15 px-2">
                             API requests per day, peaking at 13,000 requests a second.
                         </p>
                     </div>
@@ -572,35 +743,38 @@
 
 
                     <div class="w-[100%] sm:w-[50%] lg:w-[25%] p-4">
-                        <div class="mb-[20px] border-s-2 border-blue-800 px-2">
+                        <div class="mb-[20px] border-s-2 blue-primary px-2">
                             <h5>99.99M+</h5>
                         </div>
 
-                        <p class="fs-15">
-                            API requests per day, peaking at 13,000 requests a second.
+                        <p class="fs-15 px-2">
+
+                            historical uptime for <span class="text-[#00d4ff]">Stripe service</span>
                         </p>
                     </div>
 
 
 
                     <div class="w-[100%] sm:w-[50%] lg:w-[25%] p-4">
-                        <div class="mb-[20px] border-s-2 border-blue-800 px-2">
+                        <div class="mb-[20px] border-s-2 blue-primary px-2">
                             <h5>90M+</h5>
                         </div>
 
-                        <p class="fs-15">
+                        <p class="fs-15 px-2">
                             API requests per day, peaking at 13,000 requests a second.
                         </p>
                     </div>
 
 
                     <div class="w-[100%] sm:w-[50%] lg:w-[25%] p-2">
-                        <div class="mb-[20px] border-s-2 border-blue-800 px-4">
+                        <div class="mb-[20px] border-s-2 blue-primary px-2">
                             <h5>135M+</h5>
                         </div>
 
-                        <p class="fs-15">
-                            API requests per day, peaking at 13,000 requests a second.
+                        <p class="fs-15 px-2">
+
+                            currencies and payment methods supported.
+
                         </p>
                     </div>
 
@@ -620,8 +794,8 @@
     <!-- Start Enterprises-section -->
     <div class="enterprises-section container-1">
         <div class="flex flex-col gap-y-5 justify-between">
-            <div class="w-[100%] lg:w-[75%] ">
-                <h6 class="text-purple-500 mb-[20px]">
+            <div class="w-[100%] lg:w-[70%] ">
+                <h6 class="text-blue-800 font-semibold mb-[20px]">
                     Enterprise reinvention
                 </h6>
                 <h3 class="mb-[20px]">Bring agility to your enterprise</h3>
@@ -656,8 +830,8 @@
                                 <h5 class="mb-[20px]">Product use</h5>
                             </div>
                             <div class="flex gap-x-1  items-center mb-[10px] px-4">
-                                <svg class="ProductIcon ProductIcon--Payments StripeProductUsed__productLogo" width="40"
-                                    height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="ProductIcon ProductIcon--Payments StripeProductUsed__productLogo" width="20"
+                                    height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                                     <title>Payments</title>
 
@@ -686,8 +860,8 @@
                                 <p class="fs-15">Payment</p>
                             </div>
                             <div class="flex gap-x-1  items-center px-4 ">
-                                <svg class="ProductIcon ProductIcon--Payments StripeProductUsed__productLogo" width="40"
-                                    height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="ProductIcon ProductIcon--Payments StripeProductUsed__productLogo" width="20"
+                                    height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                                     <title>Payments</title>
 
@@ -745,8 +919,8 @@
                                 <h5 class="mb-[20px]">Product use</h5>
                             </div>
                             <div class="flex gap-x-1  items-center mb-[10px] px-4">
-                                <svg class="ProductIcon ProductIcon--Payments StripeProductUsed__productLogo" width="40"
-                                    height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="ProductIcon ProductIcon--Payments StripeProductUsed__productLogo" width="20"
+                                    height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                                     <title>Payments</title>
 
@@ -775,8 +949,8 @@
                                 <p class="fs-15">Payment</p>
                             </div>
                             <div class="flex gap-x-1  items-center px-4 ">
-                                <svg class="ProductIcon ProductIcon--Payments StripeProductUsed__productLogo" width="40"
-                                    height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="ProductIcon ProductIcon--Payments StripeProductUsed__productLogo" width="20"
+                                    height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                                     <title>Payments</title>
 
@@ -836,8 +1010,8 @@
                                 <h5 class="mb-[20px]">Product use</h5>
                             </div>
                             <div class="flex gap-x-1  items-center mb-[10px] px-4">
-                                <svg class="ProductIcon ProductIcon--Payments StripeProductUsed__productLogo" width="40"
-                                    height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="ProductIcon ProductIcon--Payments StripeProductUsed__productLogo" width="20"
+                                    height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                                     <title>Payments</title>
 
@@ -866,8 +1040,8 @@
                                 <p class="fs-15">Payment</p>
                             </div>
                             <div class="flex gap-x-1  items-center px-4 ">
-                                <svg class="ProductIcon ProductIcon--Payments StripeProductUsed__productLogo" width="40"
-                                    height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="ProductIcon ProductIcon--Payments StripeProductUsed__productLogo" width="20"
+                                    height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                                     <title>Payments</title>
 
@@ -927,8 +1101,8 @@
                                 <h5 class="mb-[20px]">Product use</h5>
                             </div>
                             <div class="flex gap-x-1  items-center mb-[10px] px-4">
-                                <svg class="ProductIcon ProductIcon--Payments StripeProductUsed__productLogo" width="40"
-                                    height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="ProductIcon ProductIcon--Payments StripeProductUsed__productLogo" width="20"
+                                    height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                                     <title>Payments</title>
 
@@ -957,8 +1131,8 @@
                                 <p class="fs-15">Payment</p>
                             </div>
                             <div class="flex gap-x-1  items-center px-4 ">
-                                <svg class="ProductIcon ProductIcon--Payments StripeProductUsed__productLogo" width="40"
-                                    height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="ProductIcon ProductIcon--Payments StripeProductUsed__productLogo" width="20"
+                                    height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                                     <title>Payments</title>
 
@@ -1086,29 +1260,65 @@
 
 
             <div class="flex flex-row">
-                <div class="w-[25%] flex justify-center items-center" onclick="opencard(1)">
-                    <div class="logo-wrapper ">
-                        <img src="/asset/image/BMW_logo_(gray).svg" alt="">
-                    </div>
+                <div class="content w-[25%] flex justify-center items-center  p-2  " id="content1"
+                    onclick="opencard(1)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" fill="none"
+                        class="UserLogo variant--Flat" preserveAspectRatio="xMidYMid meet" viewBox="0 0 200 40">
+                        <path fill="var(--userLogoColor, #0166B1)"
+                            d="M111.852 20c0 6.55-5.302 11.852-11.852 11.852V20h11.852zM100 8.148V20H88.148c0-6.55 5.302-11.852 11.852-11.852z">
+                        </path>
+                        <path fill="var(--userLogoColorAlt, #fff)"
+                            d="M100 8.149c6.55 0 11.852 5.302 11.852 11.85H100V8.15zm-11.852 11.85H100v11.853c-6.55 0-11.852-5.302-11.852-11.852z">
+                        </path>
+                        <path fill="var(--userLogoColor, #6F6F6F)"
+                            d="M100 8.148v.65c6.176 0 11.202 5.025 11.202 11.202h.649c0-6.545-5.305-11.852-11.851-11.852zm0 23.054c-6.176 0-11.202-5.025-11.202-11.202h-.65c0 6.545 5.306 11.852 11.852 11.852M100 0C88.955 0 80 8.955 80 20s8.955 20 20 20 20-8.955 20-20-8.955-20-20-20zm18.7 20c0 10.327-8.372 18.7-18.7 18.7S81.3 30.327 81.3 20 89.673 1.3 100 1.3s18.7 8.373 18.7 18.7z">
+                        </path>
+                        <path fill="var(--userLogoColor, #6F6F6F)"
+                            d="M91.453 10.351c.64-.668 1.001-1.44.363-2.178-.348-.4-.933-.487-1.416-.29l-.049.018.016-.042c.071-.19.117-.797-.404-1.215a1.206 1.206 0 00-.894-.248c-.6.06-1.062.468-2.318 1.86-.438.49-.86.994-1.264 1.511l3.453 3.253c1.144-1.258 1.61-1.725 2.513-2.67v.001zm-4.505-.795c.696-.846 1.434-1.612 1.769-1.915.105-.096.22-.19.36-.229.227-.062.46.098.514.33.053.232-.094.452-.257.634-.368.412-1.717 1.813-1.717 1.813l-.67-.634zM88.3 10.83s1.313-1.38 1.742-1.82c.17-.175.28-.281.397-.339.152-.073.317-.088.466.01a.406.406 0 01.175.43c-.043.196-.205.384-.34.528L89 11.489l-.7-.66zm12.095-4.358l1.105-2.46.071-.218-.02.228.116 3.286c.396.038.791.09 1.183.156l-.18-4.868a26.011 26.011 0 00-1.651-.127L99.93 5.153l-.038.2-.04-.2-1.088-2.684c-.55.023-1.1.066-1.652.127l-.18 4.868c.393-.065.788-.117 1.184-.156l.116-3.286-.02-.228.07.22 1.106 2.458h1.007zm9.181 5.088c.272.29.663.756.883 1.04l4.045-2.551a27 27 0 00-.765-.942l-2.562 1.682-.174.15.13-.19 1.132-2.242-.8-.795-2.26 1.124-.19.129.151-.174 1.696-2.543a24.621 24.621 0 00-.951-.762L107.343 9.5c.325.248.754.614 1.028.862l2.417-1.246.156-.113-.114.153-1.254 2.404z">
+                        </path>
+                        <title>BMW logo</title>
+                    </svg>
                 </div>
 
-                <div class="w-[25%] flex justify-center items-center" onclick="opencard(2)">
-                    <div class="logo-wrapper ">
-                        <img src="/asset/image/amazon-logo-1.png" alt="">
-
-                    </div>
+                <div class="content w-[25%] flex justify-center items-center" id="content2" onclick="opencard(2)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" class="UserLogo variant--Flat"
+                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 200 40">
+                        <title>Amazon logo</title>
+                        <g fill="none" fill-rule="evenodd">
+                            <path fill="var(--userLogoColor, #EFA82E)"
+                                d="M111.58 33.91C106.18 37.9 98.37 40 91.64 40a36.13 36.13 0 01-24.37-9.28c-.5-.45-.05-1.08.56-.72a49.08 49.08 0 0024.37 6.46c5.98 0 12.55-1.24 18.6-3.8.9-.39 1.67.6.78 1.25">
+                            </path>
+                            <path fill="var(--userLogoColor, #EFA82E)"
+                                d="M113.82 31.36c-.69-.88-4.56-.42-6.3-.21-.52.06-.6-.4-.13-.73 3.09-2.17 8.15-1.54 8.73-.82.6.74-.15 5.8-3.04 8.21-.45.38-.87.18-.67-.31.65-1.63 2.1-5.26 1.41-6.14">
+                            </path>
+                            <path fill="var(--userLogoColor, #1B1A19)"
+                                d="M107.65 15.13v-2.1c0-.33.24-.54.53-.54h9.45c.3 0 .54.22.54.53v1.8c0 .3-.26.7-.71 1.33l-4.9 6.97c1.82-.04 3.74.23 5.4 1.16.36.2.47.51.5.82v2.24c0 .31-.34.67-.7.48a10.89 10.89 0 00-9.98.02c-.33.17-.67-.18-.67-.49v-2.13c0-.34 0-.93.35-1.45l5.67-8.11h-4.94a.53.53 0 01-.54-.53M73.2 28.26h-2.88a.54.54 0 01-.5-.48V13.06c0-.3.24-.53.55-.53h2.67c.28.01.5.23.52.5v1.92h.06c.7-1.86 2-2.73 3.78-2.73 1.8 0 2.92.87 3.73 2.73a4.08 4.08 0 013.96-2.73c1.2 0 2.52.5 3.33 1.61.9 1.24.72 3.04.72 4.62v9.28c0 .3-.25.53-.55.53h-2.87a.54.54 0 01-.52-.52v-7.8c0-.63.06-2.18-.08-2.76-.22-1-.86-1.27-1.69-1.27-.7 0-1.42.46-1.72 1.2-.29.75-.26 1.99-.26 2.82v7.8c0 .3-.25.53-.56.53h-2.87a.54.54 0 01-.51-.52v-7.8c0-1.65.26-4.06-1.77-4.06-2.07 0-1.99 2.35-1.99 4.05v7.8c0 .3-.25.53-.55.53m53.11-13.03c-2.11 0-2.25 2.88-2.25 4.67 0 1.8-.02 5.64 2.23 5.64 2.22 0 2.33-3.1 2.33-4.99 0-1.24-.05-2.72-.43-3.9-.32-1.02-.96-1.42-1.88-1.42m-.02-3.01c4.26 0 6.57 3.66 6.57 8.3 0 4.5-2.55 8.05-6.57 8.05-4.19 0-6.46-3.65-6.46-8.2 0-4.59 2.3-8.15 6.46-8.15m12.1 16.04h-2.87a.54.54 0 01-.51-.52V13a.55.55 0 01.55-.48h2.66c.25.01.46.18.51.41v2.25h.05c.81-2.01 1.94-2.97 3.92-2.97 1.29 0 2.55.47 3.35 1.74.75 1.17.75 3.16.75 4.58v9.26a.55.55 0 01-.55.46h-2.88a.54.54 0 01-.5-.46v-8c0-1.6.18-3.95-1.8-3.95-.7 0-1.35.46-1.67 1.17-.4.9-.46 1.8-.46 2.79v7.92c0 .3-.25.53-.55.53m-35.38-.03a.6.6 0 01-.68.06c-.96-.79-1.13-1.15-1.65-1.9-1.57 1.6-2.7 2.08-4.73 2.08-2.42 0-4.3-1.5-4.3-4.47a4.87 4.87 0 013.06-4.69c1.56-.68 3.74-.8 5.4-1v-.36c0-.69.06-1.5-.35-2.08-.35-.53-1.02-.75-1.61-.75-1.1 0-2.07.56-2.31 1.72-.05.26-.24.52-.5.53l-2.78-.3c-.24-.05-.5-.24-.43-.6.64-3.37 3.69-4.4 6.42-4.4 1.4 0 3.23.38 4.33 1.44 1.4 1.3 1.26 3.04 1.26 4.93v4.47c0 1.34.56 1.93 1.09 2.66.18.26.22.57-.01.76-.59.49-1.63 1.4-2.2 1.9h-.01zm-2.9-7c0 1.12.03 2.05-.54 3.05-.45.8-1.18 1.3-1.98 1.3-1.1 0-1.75-.84-1.75-2.08 0-2.44 2.2-2.88 4.27-2.88v.61zm-34.76 7a.6.6 0 01-.68.06c-.95-.79-1.12-1.15-1.65-1.9-1.57 1.6-2.69 2.08-4.73 2.08-2.42 0-4.3-1.5-4.3-4.47a4.87 4.87 0 013.06-4.69c1.56-.68 3.74-.8 5.4-1v-.36c0-.69.06-1.5-.35-2.08-.34-.53-1.02-.75-1.6-.75-1.1 0-2.08.56-2.32 1.72-.05.26-.24.52-.5.53l-2.78-.3c-.23-.05-.5-.24-.43-.6.64-3.37 3.7-4.4 6.43-4.4 1.4 0 3.22.38 4.32 1.44 1.4 1.3 1.27 3.04 1.27 4.93v4.47c0 1.34.55 1.93 1.08 2.66.18.26.22.57-.01.76-.59.49-1.63 1.4-2.2 1.9zm-2.9-7c0 1.12.03 2.05-.53 3.05-.46.8-1.18 1.3-2 1.3-1.1 0-1.74-.84-1.74-2.08 0-2.44 2.2-2.88 4.28-2.88v.61z">
+                            </path>
+                        </g>
+                    </svg>
                 </div>
 
-                <div class="w-[25%] flex justify-center items-center" onclick="opencard(3)">
-                    <div class="logo-wrapper ">
-                        <img src="/asset/image/maersk.jpeg" alt="">
-                    </div>
+                <div class="content w-[25%] flex justify-center items-center" id="content3" onclick="opencard(3)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" fill="none"
+                        class="UserLogo variant--Flat" preserveAspectRatio="xMidYMid meet" viewBox="0 0 200 40">
+                        <path fill="var(--userLogoColor, #000)" fill-rule="evenodd"
+                            d="M71.56 26.746V12.891h3.716l4.707 10.354L84.62 12.89h3.559v13.855h-3.064v-8.06l-3.534 8.06h-3.265l-3.58-8.016v8.016H71.56zm28.947-5.364l-2.563-5.874-2.505 5.873h5.068zm-7.359 5.364h-3.603l6.193-13.855h4.435l6.237 13.855h-3.556l-1.227-2.76h-7.29l-1.189 2.76zm14.699 0V12.891h13.329v2.77h-10.11v2.752h8.669v2.704h-8.669v2.858h10.135v2.771h-13.354zm19.211-7.493h7.004V15.66h-7.004v3.592zm-3.265 7.493V12.891h11.155c1.49 0 2.355.855 2.355 2.323v4.655c0 1.071-.955 2.039-2.808 2.039-.105.005-.212 0-.322 0l3.247 4.838h-3.583l-3.079-4.737h-3.7v4.737h-3.265zm19.384.008h-1.105c-1.443 0-2.138-.827-2.138-2.032v-1.81h3.243v1.072h6.89v-2.836h-7.903c-1.262 0-2.171-.842-2.171-2.01v-4.114c0-1.245.989-2.125 2.193-2.125h9.035c1.221 0 2.065.905 2.065 2.213v1.653h-3.219V15.67h-6.89v2.729h7.88c1.164 0 2.229.764 2.229 2.234v3.955c0 1.347-.752 2.166-2.16 2.166h-7.949zm13.221 0V12.897h3.31v5.542l6.304-5.542h4.481l-7.52 6.437 7.791 7.42h-4.64l-6.416-6.302v6.302h-3.31z"
+                            clip-rule="evenodd"></path>
+                        <path fill="var(--userLogoColor, #42B0D5)" fill-rule="evenodd"
+                            d="M54.397 4H31.608c-.959 0-1.878.38-2.555 1.055A3.578 3.578 0 0028 7.6v24.307c0 1.981 1.615 3.588 3.608 3.588h22.79c1.995 0 3.613-1.61 3.613-3.594V7.594C58.011 5.609 56.393 4 54.397 4zm-.686 7.507l-5.924 7.357 8.56 4.079-.006.029h-9.503l2.118 9.166-.029.017-5.924-7.357-5.924 7.357-.024-.012 2.113-9.172H29.67l-.011-.028 8.56-4.08-5.924-7.356.017-.023 8.56 4.079 2.113-9.167h.035l2.113 9.167 8.56-4.08.018.024z"
+                            clip-rule="evenodd"></path>
+                        <title>Maersk logo</title>
+                    </svg>
                 </div>
 
-                <div class="w-[25%] flex justify-center items-center" onclick="opencard(4)">
-                    <div class="logo-wrapper ">
-                        <img src="/asset/image/twilio-1.png" alt="">
-                    </div>
+                <div class="content w-[25%] flex justify-center items-center" id="content4" onclick="opencard(4)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" fill="none" class="UserLogo"
+                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 200 40">
+                        <path fill="var(--userLogoColor, #F22F46)"
+                            d="M64.4 16.3c0 1.7-1.4 3.1-3.1 3.1-1.7 0-3.1-1.4-3.1-3.1 0-1.7 1.4-3.1 3.1-3.1 1.7 0 3.1 1.4 3.1 3.1zm-3.1 4.3c-1.7 0-3.1 1.4-3.1 3.1 0 1.7 1.4 3.1 3.1 3.1 1.7 0 3.1-1.4 3.1-3.1 0-1.7-1.4-3.1-3.1-3.1zM80 20c0 8.3-6.7 15-15 15s-15-6.7-15-15S56.7 5 65 5s15 6.7 15 15zm-4 0c0-6.1-4.9-11-11-11s-11 4.9-11 11 4.9 11 11 11 11-4.9 11-11zm-7.3.6c-1.7 0-3.1 1.4-3.1 3.1 0 1.7 1.4 3.1 3.1 3.1 1.7 0 3.1-1.4 3.1-3.1 0-1.7-1.4-3.1-3.1-3.1zm0-7.4c-1.7 0-3.1 1.4-3.1 3.1 0 1.7 1.4 3.1 3.1 3.1 1.7 0 3.1-1.4 3.1-3.1 0-1.7-1.4-3.1-3.1-3.1zm51.6-2.3c.1 0 .2.1.3.2v3.2c0 .2-.2.3-.3.3H115c-.2 0-.3-.2-.3-.3v-3.1c0-.2.2-.3.3-.3h5.3zm-.1 4.5H110c-.1 0-.3.1-.3.3l-1.3 5-.1.3-1.6-5.3c0-.1-.2-.3-.3-.3h-4c-.1 0-.3.1-.3.3l-1.5 5-.1.3-.1-.3-.6-2.5-.6-2.5c0-.1-.2-.3-.3-.3h-8v-4.3c0-.1-.2-.3-.4-.2l-5 1.6c-.2 0-.3.1-.3.3v2.7h-1.3c-.1 0-.3.1-.3.3v3.8c0 .1.1.3.3.3h1.3v4.7c0 3.3 1.8 4.8 5.1 4.8 1.4 0 2.7-.3 3.6-.8v-4c0-.2-.2-.3-.3-.2-.5.2-1 .3-1.4.3-.9 0-1.4-.4-1.4-1.4v-3.4h2.9c.1 0 .3-.1.3-.3v-3.2L97.8 29c0 .1.2.3.3.3h4.2c.1 0 .3-.1.3-.3l1.8-5.6.9 2.9.8 2.7c0 .1.2.3.3.3h4.2c.1 0 .3-.1.3-.3l3.8-12.6V29c0 .1.1.3.3.3h5.1c.1 0 .3-.1.3-.3V15.7c0-.1-.1-.3-.2-.3zm6.7-4.5h-5.1c-.1 0-.3.1-.3.3v17.7c0 .1.1.3.3.3h5.1c.1 0 .3-.1.3-.3V11.1c0-.1-.1-.2-.3-.2zm6.8 0h-5.3c-.1 0-.3.1-.3.3v3.1c0 .1.1.3.3.3h5.3c.1 0 .3-.1.3-.3v-3.2c0-.1-.1-.2-.3-.2zm-.1 4.5h-5.1c-.1 0-.3.1-.3.3v13.1c0 .1.1.3.3.3h5.1c.1 0 .3-.1.3-.3V15.7c0-.1-.1-.3-.3-.3zm16.1 6.8c0 3.8-3.2 7.1-7.7 7.1-4.4 0-7.6-3.3-7.6-7.1s3.2-7.1 7.7-7.1c4.4 0 7.6 3.3 7.6 7.1zm-5.4.1c0-1.4-1-2.5-2.2-2.4-1.3 0-2.2 1.1-2.2 2.4 0 1.3 1 2.4 2.2 2.4 1.3 0 2.2-1.1 2.2-2.4z">
+                        </path>
+                        <title>Twilio logo</title>
+                    </svg>
                 </div>
 
 
@@ -1125,8 +1335,8 @@
 
     <section class="startup-section">
         <div class="container-1">
-            <div class=" w-[100%] md:w-[60%] mb-[20px]">
-                <p class="mb-[20px] text-purple-500">Built for growth</p>
+            <div class=" w-[100%] md:w-[65%] mb-[20px] px-2">
+                <p class="mb-[20px] text-blue-800">Built for growth</p>
                 <h3 class="mb-[20px]">Take your startup farther, faster</h3>
                 <p>
                     Startups build on Stripe to launch faster, adapt as they grow, and automate workflows to do more
@@ -1136,20 +1346,55 @@
             </div>
 
             <div class="flex flex-col lg:flex-row">
-                <div class="w-[100%] lg:w-[50%] flex flex-col my-[32px] lg:mt-[200px] px-2 lg:px-10 gap-y-10">
-                    <div class="card flex flex-col justify-between gap-y-3 p-1">
+                <div class="w-[100%] lg:w-[50%] flex flex-col my-[32px] lg:mt-[200px] px-4 gap-y-10">
+                    <div class=" card flex flex-col justify-between p-1">
                         <div class="cap">
                             <div class="img-wrapper">
                                 <img src="/asset/image/Screenshot 2024-05-30 at 1.46.35 PM.png" alt="">
                             </div>
                         </div>
                         <div class="card-body p-4">
-                            <div class="logo-wrapper mb-[20px]"><img src="" alt=""></div>
+                            <div class="w-fit flex justify-between gap-x-2 items-center mb-[20px]">
+                                <svg class="ProductIcon ProductIcon--Atlas ProductBadge__icon" width="20" height="20"
+                                    viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                                    <title>Atlas</title>
+
+                                    <g clip-path="url(#product-icon-atlas--a)">
+                                        <path
+                                            d="M20.51.3c1 0 1.92.57 2.36 1.47l8.22 16.42 8.65 17.31a2.64 2.64 0 0 1-1.65 3.73l-.17.04c-.12.03-.24.04-.36.05h-.18L20.5 35.99 9.94 18.19l8.2-16.42A2.64 2.64 0 0 1 20.52.3z"
+                                            fill="#FB0"></path>
+                                        <path
+                                            d="M20.51.3c1 0 1.92.57 2.36 1.47l8.22 16.42L20.5 35.98 3.65 39.33a2.64 2.64 0 0 1-2.37-3.83l8.66-17.3 8.2-16.43A2.64 2.64 0 0 1 20.52.3z"
+                                            fill="url(#product-icon-atlas--b)"></path>
+                                        <path
+                                            d="M20.51.3c1 0 1.92.57 2.36 1.47l8.22 16.42L20.5 35.98 9.94 18.19l8.2-16.42A2.64 2.64 0 0 1 20.34.3h.18z"
+                                            fill="url(#product-icon-atlas--c)"></path>
+                                    </g>
+                                    <defs>
+                                        <linearGradient id="product-icon-atlas--b" x1="16.03" y1="18.01" x2="15.94"
+                                            y2="39.33" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FFD748"></stop>
+                                            <stop offset=".54" stop-color="#FFCD48"></stop>
+                                            <stop offset="1" stop-color="#FFCB48"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="product-icon-atlas--c" x1="20.51" y1="34.72" x2="20.51"
+                                            y2="15.01" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FFAD00"></stop>
+                                            <stop offset="1" stop-color="#FF7600"></stop>
+                                        </linearGradient>
+                                        <clipPath id="product-icon-atlas--a">
+                                            <path fill="#fff" d="M0 0h40v40H0z"></path>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p>Atlas</p>
+                            </div>
                             <h5 class="mb-[20px]">Incorporate your company</h5>
                             <p class="mb-[20px]">
                                 Form a legal entity, issue stock, and start accepting payments.
                             </p>
-                            <div class=" w-fit a1">
+                            <div class="card-bottom w-fit a1">
                                 <a href="">Learn about Atlas</a>
                                 <i class="fa-solid fa-arrow-right b2"></i>
                                 <i class="fa-solid fa-chevron-right b1"></i>
@@ -1158,19 +1403,51 @@
                     </div>
 
                     <!-- second card -->
-                    <div class="card flex flex-col justify-between gap-y-3 p-1">
+                    <div class=" card flex flex-col justify-between p-1">
                         <div class="cap">
                             <div class="img-wrapper">
                                 <img src="/asset/image/Screenshot 2024-05-30 at 1.46.35 PM.png" alt="">
                             </div>
                         </div>
                         <div class="card-body p-4">
-                            <div class="logo-wrapper mb-[20px]"><img src="" alt=""></div>
+                            <div class="w-fit flex justify-between gap-x-2 items-center mb-[20px]">
+                                <svg class="ProductIcon ProductBadge__icon" width="20" height="20" viewBox="0 0 40 40"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                                    <title>Checkout</title>
+
+                                    <path
+                                        d="M31.54 4h-19.7c-.84 0-1.63.43-2.09 1.14a2.52 2.52 0 0 0-.18 2.39l5.1 11.46c.3.64.3 1.38 0 2.02L8 36h23.54c.97 0 1.86-.58 2.26-1.48l5.98-13.5c.3-.65.3-1.39 0-2.04L33.8 5.48A2.48 2.48 0 0 0 31.54 4z"
+                                        fill="#96F"></path>
+                                    <path
+                                        d="M7.23 36a2.3 2.3 0 0 1-.98-.22h.04a2.43 2.43 0 0 1-1.23-1.23L.22 23.53a2.54 2.54 0 0 1 .17-2.38A2.45 2.45 0 0 1 2.46 20h19.5c.97 0 1.84.57 2.23 1.46l4.8 10.85.68 1.53c.1.22.23.42.38.6.49.64 1.2 1.3 1.98 1.51-.11.03-.3.05-.55.05H7.22z"
+                                        fill="url(#product-icon-checkout--a)"></path>
+                                    <path
+                                        d="M21.97 20c.9 0 1.72.5 2.14 1.3l.08.16 4.8 10.85.68 1.53a4.43 4.43 0 0 0 2.3 2.01l.18.07c-.2.05-.4.08-.61.08H8L14.67 21c.15-.32.22-.66.22-1.01h7.08z"
+                                        fill="url(#product-icon-checkout--b)"></path>
+                                    <defs>
+                                        <linearGradient id="product-icon-checkout--a" x1="16.01" y1="35.59" x2="16.01"
+                                            y2="21.16" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#21CFE0"></stop>
+                                            <stop offset=".17" stop-color="#20D1E0"></stop>
+                                            <stop offset=".38" stop-color="#18E2E2"></stop>
+                                            <stop offset=".61" stop-color="#13ECE3"></stop>
+                                            <stop offset="1" stop-color="#11EFE3"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="product-icon-checkout--b" x1="21.07" y1="43" x2="21.07"
+                                            y2="14.5" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#0048E5"></stop>
+                                            <stop offset="1" stop-color="#9B66FF"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <p>Check out</p>
+                            </div>
                             <h5 class="mb-[20px]">Incorporate your company</h5>
                             <p class="mb-[20px]">
                                 Form a legal entity, issue stock, and start accepting payments.
                             </p>
-                            <div class=" w-fit a1">
+                            <div class="card-bottom w-fit a1">
                                 <a href="">Learn about Atlas</a>
                                 <i class="fa-solid fa-arrow-right b2"></i>
                                 <i class="fa-solid fa-chevron-right b1"></i>
@@ -1183,7 +1460,7 @@
 
                 <!-- second column -->
 
-                <div class="w-[100%] lg:w-[50%] flex flex-col px-2 lg:px-10 gap-y-10">
+                <div class="w-[100%] lg:w-[50%] flex flex-col px-4 gap-y-10">
                     <div class=" card flex flex-col justify-between p-1">
                         <div class="cap">
                             <div class="img-wrapper">
@@ -1191,12 +1468,44 @@
                             </div>
                         </div>
                         <div class="card-body p-4">
-                            <div class="logo-wrapper mb-[20px]"><img src="" alt=""></div>
+                            <div class="w-fit flex justify-between gap-x-2 items-center mb-[20px]">
+                                <svg class="ProductIcon ProductBadge__icon" width="20" height="20" viewBox="0 0 40 40"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                                    <title>Checkout</title>
+
+                                    <path
+                                        d="M31.54 4h-19.7c-.84 0-1.63.43-2.09 1.14a2.52 2.52 0 0 0-.18 2.39l5.1 11.46c.3.64.3 1.38 0 2.02L8 36h23.54c.97 0 1.86-.58 2.26-1.48l5.98-13.5c.3-.65.3-1.39 0-2.04L33.8 5.48A2.48 2.48 0 0 0 31.54 4z"
+                                        fill="#96F"></path>
+                                    <path
+                                        d="M7.23 36a2.3 2.3 0 0 1-.98-.22h.04a2.43 2.43 0 0 1-1.23-1.23L.22 23.53a2.54 2.54 0 0 1 .17-2.38A2.45 2.45 0 0 1 2.46 20h19.5c.97 0 1.84.57 2.23 1.46l4.8 10.85.68 1.53c.1.22.23.42.38.6.49.64 1.2 1.3 1.98 1.51-.11.03-.3.05-.55.05H7.22z"
+                                        fill="url(#product-icon-checkout--a)"></path>
+                                    <path
+                                        d="M21.97 20c.9 0 1.72.5 2.14 1.3l.08.16 4.8 10.85.68 1.53a4.43 4.43 0 0 0 2.3 2.01l.18.07c-.2.05-.4.08-.61.08H8L14.67 21c.15-.32.22-.66.22-1.01h7.08z"
+                                        fill="url(#product-icon-checkout--b)"></path>
+                                    <defs>
+                                        <linearGradient id="product-icon-checkout--a" x1="16.01" y1="35.59" x2="16.01"
+                                            y2="21.16" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#21CFE0"></stop>
+                                            <stop offset=".17" stop-color="#20D1E0"></stop>
+                                            <stop offset=".38" stop-color="#18E2E2"></stop>
+                                            <stop offset=".61" stop-color="#13ECE3"></stop>
+                                            <stop offset="1" stop-color="#11EFE3"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="product-icon-checkout--b" x1="21.07" y1="43" x2="21.07"
+                                            y2="14.5" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#0048E5"></stop>
+                                            <stop offset="1" stop-color="#9B66FF"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <p>Payment link</p>
+                            </div>
                             <h5 class="mb-[20px]">Incorporate your company</h5>
                             <p class="mb-[20px]">
                                 Form a legal entity, issue stock, and start accepting payments.
                             </p>
-                            <div class=" w-fit a1">
+                            <div class="card-bottom w-fit a1">
                                 <a href="">Learn about Atlas</a>
                                 <i class="fa-solid fa-arrow-right b2"></i>
                                 <i class="fa-solid fa-chevron-right b1"></i>
@@ -1205,19 +1514,48 @@
                     </div>
 
                     <!-- second card -->
-                    <div class="relative card flex flex-col justify-between gap-y-3 p-1">
+                    <div class=" card flex flex-col justify-between p-1">
                         <div class="cap">
                             <div class="img-wrapper">
                                 <img src="/asset/image/Screenshot 2024-05-30 at 1.46.35 PM.png" alt="">
                             </div>
                         </div>
                         <div class="card-body p-4">
-                            <div class="logo-wrapper mb-[20px]"><img src="" alt=""></div>
+                            <div class="w-fit flex justify-between gap-x-2 items-center mb-[20px]">
+                                <svg class="ProductIcon ProductIcon--Invoicing ProductBadge__icon" width="20"
+                                    height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                                    <title>Invoicing</title>
+
+                                    <path
+                                        d="M12.5001 1C11.1194 1 10.0001 2.11929 10.0001 3.5V36.3314C10.0001 37.4628 9.24028 38.4532 8.14746 38.7462L36.1472 31.24C37.2401 30.9472 38.0001 29.9567 38.0001 28.8252V3.5C38.0001 2.11929 36.8808 1 35.5001 1H12.5001Z"
+                                        fill="#00D924"></path>
+                                    <path
+                                        d="M1.25338 24.5476C0.0575759 25.238 -0.352092 26.7668 0.338338 27.9626L5.81522 37.449C6.38097 38.4289 7.53438 38.9067 8.62734 38.6138L34.7744 31.6076L24.5869 13.9626C23.8969 12.7668 22.3676 12.3571 21.1718 13.0476L1.25338 24.5476Z"
+                                        fill="url(#product-icon-invoicing--a)"></path>
+                                    <path
+                                        d="M8.40173 38.6633C8.4771 38.6504 8.55237 38.6339 8.62737 38.6138L34.7744 31.6076L24.5869 13.9626C23.897 12.7668 22.3677 12.3571 21.1719 13.0476L10.0002 19.4976V36.3314C10.0002 37.3728 9.35638 38.2947 8.40173 38.6633Z"
+                                        fill="url(#product-icon-invoicing--b)"></path>
+                                    <defs>
+                                        <linearGradient id="product-icon-invoicing--a" x1="17.3897" y1="20.25"
+                                            x2="17.3893" y2="38" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FFD748"></stop>
+                                            <stop offset="1" stop-color="#FFC148"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="product-icon-invoicing--b" x1="21.5889" y1="12.7122"
+                                            x2="21.5881" y2="38.6633" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#00A600"></stop>
+                                            <stop offset="1" stop-color="#00D924"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <p>Invoicing</p>
+                            </div>
                             <h5 class="mb-[20px]">Incorporate your company</h5>
                             <p class="mb-[20px]">
                                 Form a legal entity, issue stock, and start accepting payments.
                             </p>
-                            <div class=" w-fit a1">
+                            <div class="card-bottom w-fit a1">
                                 <a href="">Learn about Atlas</a>
                                 <i class="fa-solid fa-arrow-right b2"></i>
                                 <i class="fa-solid fa-chevron-right b1"></i>
@@ -1289,7 +1627,7 @@
                         <p class="fs-15">
                             We offer client and server libraries in everything from React and PHP to .NET and iOS.
                         </p>
-                        <div class="flex flex-row items-center  gap-x-2 hover:text-blue-200">
+                        <div class="flex flex-row items-center  gap-x-2 text-blue-300 hover:text-white">
                             <div class=" w-fit a1">
                                 <a href="">See libraries</a>
                                 <i class="fa-solid fa-arrow-right b2"></i>
@@ -1305,17 +1643,19 @@
                     <div>
                         <i class="fa-sharp fa-solid fa-swatchbook text-3xl mb-[20px] text-blue-200 "></i>
                         <div class="">
-                            <h6>Use Stripe with your stack</h6>
+                            <h6>Try no-code options</h6>
                         </div>
                     </div>
 
                     <div class="flex flex-col justify-between gap-y-3">
                         <p class="fs-15">
-                            We offer client and server libraries in everything from React and PHP to .NET and iOS.
+
+                            Customize and deploy payments interfaces directly from the Stripe Dashboard.
+
                         </p>
-                        <div class="flex flex-row items-center  gap-x-2 hover:text-blue-200">
+                        <div class="flex flex-row items-center  gap-x-2 text-blue-300 hover:text-white">
                             <div class=" w-fit a1">
-                                <a href="">See libraries</a>
+                                <a href="">Explore no-code</a>
                                 <i class="fa-solid fa-arrow-right b2"></i>
                                 <i class="fa-solid fa-chevron-right b1"></i>
                             </div>
@@ -1329,17 +1669,19 @@
                     <div>
                         <i class="fa-solid fa-boxes-packing text-3xl mb-[20px] text-blue-200"></i>
                         <div class="">
-                            <h6>Use Stripe with your stack</h6>
+                            <h6>Explore prebuilt integrations</h6>
                         </div>
                     </div>
 
                     <div class="flex flex-col justify-between gap-y-3">
                         <p class="fs-15">
-                            We offer client and server libraries in everything from React and PHP to .NET and iOS.
+
+                            Connect Stripe to over a hundred tools including Adobe, Salesforce, and Xero.
+
                         </p>
-                        <div class="flex flex-row items-center  gap-x-2 hover:text-blue-200">
+                        <div class="flex flex-row items-center  gap-x-2 text-blue-300 hover:text-white">
                             <div class=" w-fit a1">
-                                <a href="">See libraries</a>
+                                <a href="">Browser-app marketplace</a>
                                 <i class="fa-solid fa-arrow-right b2"></i>
                                 <i class="fa-solid fa-chevron-right b1"></i>
                             </div>
@@ -1353,17 +1695,19 @@
                     <div>
                         <i class="fa-solid fa-file-shield  text-3xl mb-[20px] text-blue-200"></i>
                         <div class="">
-                            <h6>Use Stripe with your stack</h6>
+                            <h6>Build on Stripe Apps</h6>
                         </div>
                     </div>
 
                     <div class="flex flex-col justify-between gap-y-3">
                         <p class="fs-15">
-                            We offer client and server libraries in everything from React and PHP to .NET and iOS.
+
+                            Create an app just for your team or for the millions of businesses on Stripe.
+
                         </p>
-                        <div class="flex flex-row items-center  gap-x-2 hover:text-blue-200">
+                        <div class="flex flex-row items-center  gap-x-2 text-blue-300 hover:text-white">
                             <div class=" w-fit a1">
-                                <a href="">See libraries</a>
+                                <a href="">Learn more about app</a>
                                 <i class="fa-solid fa-arrow-right b2"></i>
                                 <i class="fa-solid fa-chevron-right b1"></i>
                             </div>
@@ -1407,8 +1751,8 @@
                 <div class="img-wrapper ">
                     <img src="/asset/image/ball1.png" alt="" class="h-auto w-[100%] ">
                 </div>
-                <div class=" card-body">
-                    <div class="mb-[20px]">
+                <div class=" card-content">
+                    <div class="card-body mb-[20px]">
                         <h4 class="mb-[20px]">Use a pre-integrated platform</h4>
                         <p>
                             Explore our directory to find out-of-the-box solutions that connect with Stripe, such as
@@ -1437,18 +1781,21 @@
                 <div class="img-wrapper ">
                     <img src="/asset/image/ball1.png" alt="" class="h-auto w-[100%] ">
                 </div>
-                <div class=" card-body">
-                    <div class="mb-[20px]">
-                        <h4 class="mb-[20px]">Use a pre-integrated platform</h4>
+                <div class=" card-content">
+                    <div class="card-body mb-[20px]">
+                        <h4 class="mb-[20px]">Build with Stripe-certified experts</h4>
                         <p>
-                            Explore our directory to find out-of-the-box solutions that connect with Stripe, such as
+
+                            Work with a Stripe consulting partner that can integrate and deploy Stripe solutions for
+                            you.
+
                         </p>
                     </div>
 
 
                     <div class="card-footer flex flex-row items-center  gap-x-2 hover:text-blue-800">
                         <div class=" w-fit a1">
-                            <a href="">See libraries</a>
+                            <a href="">View partners</a>
                             <i class="fa-solid fa-arrow-right b2"></i>
                             <i class="fa-solid fa-chevron-right b1"></i>
                         </div>
@@ -1464,18 +1811,19 @@
                 <div class="img-wrapper ">
                     <img src="/asset/image/ball1.png" alt="" class="h-auto w-[100%] ">
                 </div>
-                <div class=" card-body">
-                    <div class="mb-[20px]">
-                        <h4 class="mb-[20px]">Use a pre-integrated platform</h4>
+                <div class=" card-content">
+                    <div class="card-body mb-[20px]">
+                        <h4 class="mb-[20px]">Try our no-code products</h4>
                         <p>
-                            Explore our directory to find out-of-the-box solutions that connect with Stripe, such as
+                            Create an invoice, accept an in-person payment with your phone, or share a payment link
+                            directly from your Dashboard to start generating revenue in minutes—no code required.
                         </p>
                     </div>
 
 
                     <div class="card-footer flex flex-row items-center  gap-x-2 hover:text-blue-800">
                         <div class=" w-fit a1">
-                            <a href="">See libraries</a>
+                            <a href="">Explore no-code</a>
                             <i class="fa-solid fa-arrow-right b2"></i>
                             <i class="fa-solid fa-chevron-right b1"></i>
                         </div>

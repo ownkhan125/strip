@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
+
 }
+
 
 .container-1 {
     max-width: 1080px;
@@ -83,19 +85,24 @@ body .open {
 
 /* logo-section end */
 
+
+.solution-section {
+    background-color: #f6f9fc;
+
+}
+
 .solution-section .img-wrapper {
     aspect-ratio: 1/1;
 
 }
 
 .commerce-section {
-    background-color: #002c59;
+    background-color: #0a2540;
     background-image: url("/asset/image/download\ \(3\).png");
     background-repeat: no-repeat;
     background-position: right;
     background-size: 550px;
     color: white;
-    opacity: 0.9;
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
 }
 
@@ -250,7 +257,7 @@ body .open {
 
 
 .startup-section .card:hover .card-body {
-    transform: translateY(0px);
+    transform: translateY(-30px);
 
 }
 
@@ -276,9 +283,20 @@ body .open {
 
 .startup-section .card .card-body {
 
-    transform: translateY(40px);
+    background-color: white;
     transition: 0.2s linear;
     /* color: #002c59; */
+}
+
+.startup-section .card .card-bottom {
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.2s linear;
+}
+
+.startup-section .card:hover .card-bottom {
+    /* height: auto; */
+    overflow: visible;
 }
 
 .a1 .b2 {
@@ -313,7 +331,7 @@ body .open {
 } */
 
 .api-section {
-    background-color: #002c59;
+    background-color: #0a2540;
     color: white;
     clip-path: polygon(0 6%, 100% 0, 100% 94%, 0% 100%);
 }
@@ -352,18 +370,21 @@ body .open {
 
 }
 
-.started-section .card:hover .card-body {
+.started-section .card:hover .card-content {
     transform: translateY(-10%);
     background-color: #ffff;
+
 }
 
-.started-section .card-body {
+.started-section .card-content {
+
     padding: 10px;
     transition: all 0.2s linear;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
 
 }
 
@@ -383,9 +404,10 @@ body .open {
 
 
 .started-section .img-wrapper {
-    aspect-ratio: 21/13;
+    aspect-ratio: 16/9;
+
     border-radius: 5px;
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: all 0.2s linear;
     /* background-image: url("/asset/image/ball1.png"); */
 }
@@ -412,7 +434,8 @@ body h1 {
 
 body h2 {
     font-size: 56px;
-    font-weight: 500;
+    font-weight: 600;
+    line-height: 68px;
 
 }
 
@@ -426,7 +449,7 @@ body h3 {
 body h4 {
     font-size: 26px;
     font-weight: 500;
-    line-height: 50px;
+    line-height: 1.384615385;
 
 }
 
@@ -500,6 +523,28 @@ body .btn-2:hover {
     background-color: #133659;
     color: white;
 
+}
+
+body .blue-primary {
+
+    border-color: #00d4ff;
+}
+
+body .white {
+    padding: 5px 20px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    transition: 0.2s linear;
+    white-space: nowrap;
+    color: black;
+    background-color: white;
+}
+
+.border-class {
+    border-top: 2px solid blue;
 }
 
 

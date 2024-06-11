@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function opencard(n) {
     const tak = document.getElementsByClassName('tak')
     const side = document.getElementsByClassName('side')
+    const content = document.getElementsByClassName('content')
 
     for (i = 0; i < tak.length; i++) {
         tak[i].classList.add('hidden');
@@ -35,10 +36,39 @@ function opencard(n) {
     for (i = 0; i < side.length; i++) {
         side[i].classList.add('hidden');
     }
+
+    for (i = 0; i < content.length; i++) {
+        content[i].classList.remove('border-class');
+    }
     document.getElementById("tak" + n).classList.remove("hidden");
     document.getElementById("side" + n).classList.remove("hidden");
+    document.getElementById("content" + n).classList.add("border-class");
 
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    auto();
+
+});
+
+
+function auto() {
+
+    for (let i = 1; i <= 4; i++) {
+
+        setTimeout(() => {
+            // console.log(i);
+
+            opencard(i)
+            // console.log(i)
+        }, i * 2000);
+    }
+
+
+}
+setInterval(() => {
+    auto()
+}, 10000)
 
 
 
